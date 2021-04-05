@@ -7,6 +7,7 @@
 #include "Components/StaticMeshComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
+#include "Particles/ParticleSystemComponent.h"
 #include "BasePlayer.generated.h"
 
 UCLASS()
@@ -25,7 +26,8 @@ public:
 	UPROPERTY( VisibleAnywhere,BlueprintReadOnly )
 	UCameraComponent* m_Camera;
 
-	
+	UPROPERTY( VisibleAnywhere, BlueprintReadOnly )
+	UParticleSystemComponent* m_Particles;
 
 	UPROPERTY( EditAnywhere, BlueprintReadWrite )
 	float m_MovementForce;
