@@ -23,11 +23,11 @@ public:
 	UPROPERTY( VisibleAnywhere, BlueprintReadOnly )
 	USpringArmComponent* m_SpringArm;
 
-	UPROPERTY( VisibleAnywhere,BlueprintReadOnly )
+	UPROPERTY( VisibleAnywhere, BlueprintReadOnly )
 	UCameraComponent* m_Camera;
 
-	UPROPERTY( VisibleAnywhere, BlueprintReadOnly )
-	UParticleSystemComponent* m_Particles;
+	UPROPERTY( VisibleAnywhere, BlueprintReadOnly );
+	UStaticMeshComponent* m_OrbitableObject;
 
 	UPROPERTY( EditAnywhere, BlueprintReadWrite )
 	float m_MovementForce;
