@@ -22,7 +22,6 @@ ABasePlayer::ABasePlayer()
 	m_Mesh->SetSimulatePhysics(true);
 	m_MovementForce = 100000;
 
-	
 }
 
 // Called to bind functionality to input
